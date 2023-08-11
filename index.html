@@ -6,24 +6,26 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
   <header>
-    <a href="index.html"class="website-logo"><img src = "imgs/website-logo.png" alt="National Bookstore"/></a>
+    <a href="index.html"class="website-logo"><img src = "imgs/website-logo.png"/></a>
     <h1>TuckIt Food Reviews</h1>
     <nav>
-      <a href="menu.html"><b>Menu</b>
+      <a href="menu.html"><b>Menu</b></a>
       <a href="about.html"><b>About</b></a>
-      <a class="login-link" href="login.html"><img src = "imgs/login-button.png"></a>
+      <a id="loginbutton" href="login.html"><b>Login</b></a>
       <a class="logout-link" href="index.html" onclick="logout()">Log out</a>
 
     </nav>
   </header>
-
-  <script src="data.js"></script>
+  <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Search...">
+        <button class="search-button">Search</button>
+  </div>
+  <script src="input data for later . j"></script>
   <script src="api.js"></script>
   <p id="loading"><img src="imgs/red-loading.gif"></p>
   <div id="api-data">
