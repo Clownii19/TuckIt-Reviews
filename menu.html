@@ -5,32 +5,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" type="text/css" />
+  <link href="menu.css" rel="stylesheet" type="text/css" />
 </head>
-
-<body>
-
+<body style="background-image: url('imgs/backgroundimg2.jpg'); background-repeat: no-repeat; background-size: cover;">
+  
   <header>
-    <a href="index.html" class="website-logo"><img src = "imgs/website-logo.png" alt="National Bookstore"/></a>
+    <a href="index.html"class="website-logo"><img src = "imgs/website-logo.png"/></a>
+    <h1>TuckIt Food Reviews</h1>
     <nav>
-      <a href="about.html">About</a>
-      <a class="login-link" href="login.html">Log in</a>
+      <a href="menu.html"><b>Menu</b></a>
+      <a href="about.html"><b>About</b></a>
+      <a id="loginbutton" href="login.html"><b>Login</b></a>
       <a class="logout-link" href="index.html" onclick="logout()">Log out</a>
-      <a class="checkout-link" href="checkout.html"><span id="CartCount" >0</span><i class="fa-solid fa-cart-shopping"></i></a>
+
     </nav>
   </header>
-  <script src="data.js"></script>
-  <script src="api.js"></script>
-  <h1>Checkout Page</h1>
-  <p id="loading"><img src="imgs/red-loading.gif"></p>
-  <div id="api-data">
-    <!-- Your data will be dynamically added here -->
-    <!-- TASK: You will need to filter the data based on the id stored on your cookies -->
-    <!-- For the amount of items, you will need to create an algorithm that checks how many times the item's ID appears in the cookie and use it to show the quantity. -->
+ <div class="container">
+   <h2 class="tuckshop-menu">Tuckshop Menu</h2>
+
   </div>
-  <script src="checkout.js"></script>
-  <script src="script.js"></script>
 </body>
 
 </html>
