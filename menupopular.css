@@ -56,7 +56,7 @@ h1 {
     background-color: #FFD600;
     min-width: 175px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 1; 
     transition: 0.2s ;
   border: 2px solid black;
 }
@@ -84,20 +84,165 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 50px;
   margin-bottom: 50px;
   height: auto;
+  
 }
 .itembox {
-  position: absolute;
+display: flex;
 width: 1000px;
 height: 250px;
 left: 458px;
 top: 1147px;
+margin-bottom: 40px;
 
 background: #FF7A00;
 box-shadow: 5px 7px 4px rgba(0, 0, 0, 0.5);
 border-radius: 40px;
+}
+  .burgerimg {
+    height:210px;
+    width: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+  }
+.itemcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.itemname {
+  font-size: 50px; /* Adjust the font size as needed */
+  margin: 0 20px; /* Add margin to create spacing between the image and text */
+
+  font-family: 'Arial', sans serif;
+}
+.itemprice {
+  font-size: 50px; /* Adjust the font size as needed */
+  margin: 0 20px; /* Add margin to create spacing between the image and text */
+
+  font-family: 'Arial', sans serif;
+  
+}
+
+.itembox2 {
+Display: flex;
+width: 1000px;
+height: 250px;
+left: 458px;
+top: 1147px;
+margin-bottom: 40px;
+
+  
+background: #FF7A00;
+box-shadow: 5px 7px 4px rgba(0, 0, 0, 0.5);
+border-radius: 40px;
+}
+.garlicbreadimg {
+  height:210px;
+  width: auto;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.itemcontainer2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.itemname2 {
+  font-size: 50px; /* Adjust the font size as needed */
+  margin: 0 20px; /* Add margin to create spacing between the image and text */
+
+  font-family: 'Arial', sans serif;
+}
+.itemprice2 {
+  font-size: 50px; /* Adjust the font size as needed */
+  margin: 0 20px; /* Add margin to create spacing between the image and text */
+
+  font-family: 'Arial', sans serif;
+
+}
+
+.itembox3 {
+display: flex;
+width: 1000px;
+height: 250px;
+left: 458px;
+top: 1147px;
+margin-bottom: 40px;
+
+background: #FF7A00;
+box-shadow: 5px 7px 4px rgba(0, 0, 0, 0.5);
+border-radius: 40px;
+}
+.butterchickenimg {
+  height:210px;
+  width: auto;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.itemcontainer3{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.itemname3 {
+  font-size: 50px; /* Adjust the font size as needed */
+  margin: 0 20px; /* Add margin to create spacing between the image and text */
+
+  font-family: 'Arial', sans serif;
+}
+.itemprice3 {
+  font-size: 50px; /* Adjust the font size as needed */
+  margin: 0 20px; /* Add margin to create spacing between the image and text */
+
+  font-family: 'Arial', sans serif;
+
+}
+
+.itembox4 {
+  Display: flex;
+width: 1000px;
+height: 250px;
+left: 458px;
+top: 1147px;
+margin-bottom: 40px;
+
+background: #FF7A00;
+box-shadow: 5px 7px 4px rgba(0, 0, 0, 0.5);
+border-radius: 40px;
+}
+.wedgesimg {
+  height:210px;
+  width: auto;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.itemcontainer4{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.itemname4 {
+  font-size: 50px; /* Adjust the font size as needed */
+  margin: 0 20px; /* Add margin to create spacing between the image and text */
+
+  font-family: 'Arial', sans serif;
+}
+.itemprice4 {
+  font-size: 50px; /* Adjust the font size as needed */
+  margin: 0 20px; /* Add margin to create spacing between the image and text */
+
+  font-family: 'Arial', sans serif;
 
 }
 header {
