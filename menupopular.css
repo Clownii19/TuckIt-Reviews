@@ -114,6 +114,36 @@ border-radius: 40px;
   justify-content: space-around;
 
 }
+.ratingcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.rating {
+  display: flex;
+  flex-direction: row-reverse; /* Reverse the direction to start from right to left */
+}
+
+input[type="radio"] {
+  display: none; /* Hide the radio input elements */
+}
+
+label {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+label:before {
+  content: "\2605"; /* Unicode character for a star */
+}
+
+input[type="radio"]:checked + label:before {
+  content: "\2605"; /* Unicode character for a filled star */
+  color: #FFD700; /* Color of the filled star */
+}
+
 .itemname {
   font-size: 50px; /* Adjust the font size as needed */
   margin: 0 20px; /* Add margin to create spacing between the image and text */
@@ -323,55 +353,36 @@ border-radius: 50px;
   
 }
 
-
-.search-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 50px;
-    flex: 1;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 25px;
-    outline:solid black 4px;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: black;
-  
-}
-
-
-/* Login Page */
-.login-container {
-    max-width: 500px;
-    margin: auto;
-    text-align: center;
-    padding: 50px;
-    border: solid black;
-}
-
-.login-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.login-form input {
-  padding: 10px;
-  margin: 5px 0;
-}
-
-/* Miscellaneous */
-
-#loading {
-  margin: auto;
-  width: 100px;
-  
-}
-
-#loading img {
-  width: 100%;
-}
-
 .logout-link  {
   display: none;
+}
+
+footer {
+  background-color: #FF7A00; /* Background color for the footer */
+  color: #fff; /* Text color for the footer */
+  padding: 20px; /* Add padding to the footer for spacing */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Set a maximum width for the footer */
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: 'Arial', sans serif; 
+  color: black;
+}
+
+.footer-content p {
+  
+  margin: 0;
+}
+.twitter img{
+  height:30px;
+  width:30px
+}
+.instagram img{
+  height:30px;
+  width:auto;
 }
