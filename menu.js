@@ -3,11 +3,11 @@ function submitRating() {
   const rating = parseFloat(ratingInput.value); // Parse the input as a floating-point number
 
   if (!isNaN(rating) && rating >= 0 && rating <= 5) {
-    const apiUrl = "https://retoolapi.dev/HtkgFH/data";
+    const apiUrl = "https://retoolapi.dev/sTDywX/data";
 
     fetch(apiUrl, {
       method: "POST",
-      body: JSON.stringify({ rating: rating }), // Send the rating as a number
+      body: JSON.stringify({ ratingburger: rating }), // Send the rating as a number
       headers: {
         "Content-Type": "application/json",
       },
@@ -24,14 +24,14 @@ function submitRating() {
   }
 }
 function fetchAndAverageItemRatings() {
-  const apiUrl = "https://retoolapi.dev/HtkgFH/data"; // Replace with your API URL
+  const apiUrl = "https://retoolapi.dev/sTDywX/data"; // Replace with your API URL
 
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
       if (Array.isArray(data) && data.length > 0) {
         // Calculate the average of item ratings
-        const totalRatings = data.reduce((acc, item) => acc + item.rating, 0);
+        const totalRatings = data.reduce((acc, item) => acc + item.ratingburger, 0);
         const averageRating =  totalRatings/data.length ;
 
         // Display the average rating in an HTML element with an ID
