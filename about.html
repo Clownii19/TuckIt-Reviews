@@ -5,27 +5,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" type="text/css" />
+  <link href="about.css" rel="stylesheet" type="text/css" />
 </head>
-
+<body style="background-image: url('imgs/backgroundimg3.png'); background-repeat: no-repeat; background-size: cover;">
 <body>
-
+  
   <header>
-   
-    <a href="index.html"class="website-logo"><img src = "imgs/website-logo.png" alt="National Bookstore"/></a> 
+    <a href="index.html"class="website-logo"><img src = "imgs/website-logo.png"/></a>
     <h1>TuckIt Food Reviews</h1>
     <nav>
-      <a href="about.html">About</a>
-      <a class="login-link" href="login.html">Log in</a>
+      <a href="menupopular.html"><b>Menu</b></a>
+      <a href="about.html"><b>About</b></a>
+      <a id="loginbutton" href="login.html"><b>Login</b></a>
       <a class="logout-link" href="index.html" onclick="logout()">Log out</a>
-      <a class="checkout-link" href="checkout.html"><span id="CartCount" >0</span><i class="fa-solid fa-cart-shopping"></i></a>
+
     </nav>
   </header>
-  <h1>About</h1>
-
-  <script src="checkout.js"></script>
-  <script src="script.js"></script>
+   <div class="container">
+     <h2 class="tuckshop-menu">About Us</h2>
+   </div>
+  <div class="container2">
+    <p class="about">Welcome to TuckIt Reviews, the ultimate destination for students seeking honest and valuable insights into their school's tuckshop menu.</p>
+    <p><b>Our Mission:</b></p>
+    <p>At TuckIt Reviews, our mission is clear and unwavering: to empower students by providing a user-friendly platform where they can access and contribute to average ratings and reviews of tuckshop menu items.</p>
+    <p>We understand the importance of making every dollar count, especially when it comes to satisfying those lunchtime cravings.</p>
+    <p>Our goal is to help you find the tastiest, most satisfying menu items while ensuring you don't waste your hard-earned money on options that may not meet your expectations.</p>
+    <p><b>By Students, For Students:</b></p>
+    <p>We are a team of students just like you, who have experienced the trials and tribulations of navigating the tuckshop's vast and often overwhelming menu. We understand the struggles of choosing between items that sound delicious but leave much to be desired in reality. That's why we built TuckIt Reviews – to create a community where students can share their candid thoughts and experiences, ensuring that you can make better decisions and avoid those disappointing meal choices.</p>
+    <p><b>How TuckIt Reviews Works:</b></p>
+    <p>TuckIt Reviews is simple and intuitive. Our platform allows you to browse through an array of tuckshop menu items, each accompanied by an average rating and genuine reviews from your peers. You can also contribute by rating and reviewing your favorite (or not-so-favorite) items, giving back to the community and helping fellow students discover their next delicious meal. We believe in the power of collective wisdom, and together, we can transform the tuckshop experience for everyone.</p>
+  </div>
 </body>
 
 </html>

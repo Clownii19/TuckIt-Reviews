@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="menupopular.css" rel="stylesheet" type="text/css" />
-  <script src="script.js"></script>
+  <script src="menu.js"></script>
 </head>
 <body style="background-image: url('imgs/backgroundimg2.jpg'); background-repeat: no-repeat; background-size: cover;">
   
@@ -44,19 +44,13 @@
           <p class="itemprice"><b>$5.00</b></p>
         </div>
         <div class="ratingcontainer">
-          <div class="rating">
-            <input type="radio" id="star5" name="rating" value="5">
-            <label for="star5"></label>
-            <input type="radio" id="star4" name="rating" value="4">
-            <label for="star4"></label>
-            <input type="radio" id="star3" name="rating" value="3">
-            <label for="star3"></label>
-            <input type="radio" id="star2" name="rating" value="2">
-            <label for="star2"></label>
-            <input type="radio" id="star1" name="rating" value="1">
-            <label for="star1"></label>
+          <label for="rating"><b>Rate this item 0-5:</b></label>
+          <div class="ratingsub">
+            <input type="number" id="rating" name="rating" min="0" max="5">
+            <button onclick="submitRating()">Submit</button>
+            <p id="averageRating">Average Rating: Calculating...</p>
 
-            <div id="result"></div>
+            <button onclick="fetchAndAverageItemRatings()">Calculate Average Rating</button>
           </div>
         </div>
 

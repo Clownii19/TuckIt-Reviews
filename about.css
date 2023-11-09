@@ -1,0 +1,129 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-image: url('backgroundimg3.png'); /* Replace with your image file path */
+  background-size: 100%; /* Set the background size to 1920x1080 pixels */
+  background-repeat: no-repeat;
+
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-bottom: 50px;
+  padding-right: 100px;
+}
+
+
+
+  .website-logo img {
+  height: 160px;
+  padding-top: 80px;
+  margin-left: 50px;
+  transition: 0.2s ;
+}
+
+  .website-logo img:hover{
+  opacity: 80%;
+
+  }
+
+
+
+  h1 {
+    font-size: 75px;
+    margin-top: 100px;
+    color: #FF7A00
+
+   }
+
+  h2{
+  font-size: 120px;
+  margin-top: 100px;
+  color: #FF7A00;
+  }
+  header nav {
+  display:flex;
+  width: 700px;
+  justify-content:space-around;
+  padding-top: 55px;
+}
+
+
+  header nav a{
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-size: 50px;
+  text-decoration: none;
+  color:black;
+  cursor: pointer;
+  transition: color 0.1s ease;
+
+  }
+  header nav a:hover {
+    color:#FF7A00; 
+
+  }
+#loginbutton {
+border-radius: 50px;
+  background-color: #FF7A00;
+  border: 5px solid black;
+  width: 140px; 
+  transition: color 0.2s ease; 
+}
+#loginbutton:hover {
+  color:white  ;
+}
+.container {
+    display: grid;
+    place-items: center;
+    /* Center content both horizontally and vertically */
+    height: 60vh; /* Set a specific height for vertical alignment */
+
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  padding: 20px;
+  max-width: 1000px; /* Set a maximum width to control text width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding-top: 250px;
+}
+
+.container2 p {
+  font-size: 20px; /* Adjust font size for a more compact look */
+  color: black;
+  margin: 10px;
+  line-height: 1.4; /* Adjust line height for better readability */
+  font-weight: bold;
+}
+
+.container2 b {
+  font-weight: bolder;
+  font-size: 25px; /* Adjust font size for section headers */
+  color: black;
+}
+
+.logout-link  {
+  display: none;
+}

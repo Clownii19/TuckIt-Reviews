@@ -114,34 +114,26 @@ border-radius: 40px;
   justify-content: space-around;
 
 }
-.ratingcontainer{
+.ratingcontainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.rating {
-  display: flex;
-  flex-direction: row-reverse; /* Reverse the direction to start from right to left */
-}
-
-input[type="radio"] {
-  display: none; /* Hide the radio input elements */
+  align-items: center;
+  text-align: center;
+  padding-left: 50px;
 }
 
 label {
-  font-size: 30px;
-  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
 }
 
-label:before {
-  content: "\2605"; /* Unicode character for a star */
+.ratingcontainer input {
+  width: 60px; /* Adjust the width as needed */
 }
 
-input[type="radio"]:checked + label:before {
-  content: "\2605"; /* Unicode character for a filled star */
-  color: #FFD700; /* Color of the filled star */
+.ratingcontainer button {
+  width: 60px; /* Adjust the width as needed */
 }
 
 .itemname {
