@@ -1,14 +1,13 @@
 // This file contains the scripts for handling logins
 
 // This is a different API used for user logins
-const login_api_url = "https://retoolapi.dev/sHYcXV/login_data";
-
+const login_api_url = "https://retoolapi.dev/dV5IYN/data";
 // Defining async function
 async function check_login() {
   // Storing response
   const response = await fetch(login_api_url);
 
-  // Storing data in form of JSON
+  // Storing data in the form of JSON
   var data = await response.json();
 
   // Get the inputted email and password
@@ -25,7 +24,7 @@ async function check_login() {
       console.log("Setting session to logged in");
       sessionStorage.setItem('userStatus', 'loggedIn');
 
-      location.reload();
+      window.location.href = "menupopular.html";
 
       loginSuccessful = true; // Mark login as successful
     }
@@ -36,5 +35,4 @@ async function check_login() {
     alert("Incorrect login information. Please try again.");
   }
 }
-
 

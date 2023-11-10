@@ -7,6 +7,8 @@
   <title>replit</title>
   <link href="menupopular.css" rel="stylesheet" type="text/css" />
   <script src="menu.js"></script>
+  <script src="login.js"></script>
+  <script src="logincheck.js"></script>
 </head>
 <body style="background-image: url('imgs/backgroundimg2.jpg'); background-repeat: no-repeat; background-size: cover;">
   
@@ -17,7 +19,7 @@
       <a href="menupopular.html"><b>Menu</b></a>
       <a href="about.html"><b>About</b></a>
       <a id="loginbutton" href="login.html"><b>Login</b></a>
-      <a class="logout-link" href="index.html" onclick="logout()">Log out</a>
+
 
     </nav>
   </header>
@@ -44,13 +46,13 @@
           <p class="itemprice"><b>$5.00</b></p>
         </div>
         <div class="ratingcontainer">
-          <label for="rating"><b>Rate this item 0-5:</b></label>
+          <label for="ratingburger"><b>Rate this item 0-5:</b></label>
           <div class="ratingsub">
-            <input type="number" id="rating" name="rating" min="0" max="5">
-            <button onclick="submitRating()">Submit</button>
-            <p id="averageRating">Average Rating: Calculating...</p>
+            <input type="number" id="ratingb" name="ratingb" min="0" max="5">
+            <button onclick="submitRatingb()">Submit</button>
+            <p id="averageRatingb">Average Rating: Calculating...</p>
 
-            <button onclick="fetchAndAverageItemRatings()">Calculate Average Rating</button>
+            <button onclick="fetchAndAverageItemRatingsb()">Calculate Average Rating</button>
           </div>
         </div>
 
@@ -61,6 +63,16 @@
           <h4 class="itemname2">Garlic Bread</h4>
           <p class="itemprice2"><b>$3.50</b></p>
         </div>
+        <div class="ratingcontainer">
+          <label for="ratinggb"><b>Rate this item 0-5:</b></label>
+          <div class="ratingsub">
+            <input type="number" id="ratinggb" name="ratinggb" min="0" max="5">
+            <button onclick="submitRatinggb()">Submit</button>
+            <p id="averageRatinggb">Average Rating: Calculating...</p>
+
+            <button onclick="fetchAndAverageItemRatingsgb()">Calculate Average Rating</button>
+          </div>
+        </div>
         </a>
       <a class="itembox3">
         <img src="imgs/butterchicken.png" class="butterchickenimg"/>
@@ -68,12 +80,32 @@
           <h4 class="itemname3">Butter Chicken</h4>
           <p class="itemprice3"><b>$8.00</b></p>
         </div>
+        <div class="ratingcontainer">
+          <label for="ratingbc"><b>Rate this item 0-5:</b></label>
+          <div class="ratingsub">
+            <input type="number" id="ratingbc" name="ratingbc" min="0" max="5">
+            <button onclick="submitRatingbc()">Submit</button>
+            <p id="averageRatingbc">Average Rating: Calculating...</p>
+
+            <button onclick="fetchAndAverageItemRatingsbc()">Calculate Average Rating</button>
+          </div>
+        </div>
         </a>
       <a class="itembox4">
         <img src="imgs/wedges.png" class="wedgesimg"/>
         <div class="itemcontainer4">
           <h4 class="itemname4">Wedges</h4>
           <p class="itemprice4"><b>$4.00</b></p>
+        </div>
+        <div class="ratingcontainer">
+          <label for="ratingw"><b>Rate this item 0-5:</b></label>
+          <div class="ratingsub">
+            <input type="number" id="ratingw" name="ratingw" min="0" max="5">
+            <button onclick="submitRatingw()">Submit</button>
+            <p id="averageRatingw">Average Rating: Calculating...</p>
+
+            <button onclick="fetchAndAverageItemRatingsw()">Calculate Average Rating</button>
+          </div>
         </div>
         </a>
  </div>

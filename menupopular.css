@@ -121,6 +121,7 @@ border-radius: 40px;
   align-items: center;
   text-align: center;
   padding-left: 50px;
+  
 }
 
 label {
@@ -133,7 +134,7 @@ label {
 }
 
 .ratingcontainer button {
-  width: 60px; /* Adjust the width as needed */
+  width: 70px; /* Adjust the width as needed */
 }
 
 .itemname {
@@ -345,9 +346,6 @@ border-radius: 50px;
   
 }
 
-.logout-link  {
-  display: none;
-}
 
 footer {
   background-color: #FF7A00; /* Background color for the footer */

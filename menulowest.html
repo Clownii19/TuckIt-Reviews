@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="menupopular.css" rel="stylesheet" type="text/css" />
-  <script src="script.js"></script>
+  <script src="menu.js"></script>
 </head>
 <body style="background-image: url('imgs/backgroundimg2.jpg'); background-repeat: no-repeat; background-size: cover;">
-
+  
   <header>
     <a href="index.html"class="website-logo"><img src = "imgs/website-logo.png"/></a>
     <h1>TuckIt Food Reviews</h1>
@@ -17,7 +17,7 @@
       <a href="menupopular.html"><b>Menu</b></a>
       <a href="about.html"><b>About</b></a>
       <a id="loginbutton" href="login.html"><b>Login</b></a>
-      <a class="logout-link" href="index.html" onclick="logout()">Log out</a>
+
 
     </nav>
   </header>
@@ -33,55 +33,83 @@
         <a href="menupopular.html"><b>Popular</b></a>
       </div>
     </div>
-    <h3 class="popular">Lowest $ Items</h3>
+    <h3 class="popular">Lowest $</h3>
 
   </div>
+  <!-- garlicbread -->
  <div class="menuitemsbox">
-      <a class="itembox">
+      <a class="itembox2">
         <img src="imgs/garlicbread.png" class="garlicbreadimg"/>
-        <div class="itemcontainer">
-          <h4 class="itemname">Garlic Bread</h4>
-          <p class="itemprice"><b>$3.50</b></p>
+        <div class="itemcontainer2">
+          <h4 class="itemname2">Garlic Bread</h4>
+          <p class="itemprice2"><b>$3.50</b></p>
         </div>
         <div class="ratingcontainer">
-          <div class="rating">
-            <input type="radio" id="star5" name="rating" value="5">
-            <label for="star5"></label>
-            <input type="radio" id="star4" name="rating" value="4">
-            <label for="star4"></label>
-            <input type="radio" id="star3" name="rating" value="3">
-            <label for="star3"></label>
-            <input type="radio" id="star2" name="rating" value="2">
-            <label for="star2"></label>
-            <input type="radio" id="star1" name="rating" value="1">
-            <label for="star1"></label>
+          <label for="ratinggb"><b>Rate this item 0-5:</b></label>
+          <div class="ratingsub">
+            <input type="number" id="ratinggb" name="ratinggb" min="0" max="5">
+            <button onclick="submitRatinggb()">Submit</button>
+            <p id="averageRatinggb">Average Rating: Calculating...</p>
 
-            <div id="result"></div>
+            <button onclick="fetchAndAverageItemRatingsgb()">Calculate Average Rating</button>
           </div>
         </div>
-
-      </a>
-      <a class="itembox2">
-        <img src="imgs/wedges.png" class="wedgesimg"/>
-        <div class="itemcontainer2">
-          <h4 class="itemname2">Wedges</h4>
-          <p class="itemprice2"><b>$4.00</b></p>
-        </div>
-        </a>
-      <a class="itembox3">
-        <img src="imgs/burger.png" class="burgerimg"/>
-        <div class="itemcontainer3">
-          <h4 class="itemname3">Cheese Burger</h4>
-          <p class="itemprice3"><b>$5.00</b></p>
-        </div>
-        </a>
+      </a>    
+    <!-- wedges -->
       <a class="itembox4">
-        <img src="imgs/butterchicken.png" class="butterchickenimg"/>
+        <img src="imgs/wedges.png" class="wedgesimg"/>
         <div class="itemcontainer4">
-          <h4 class="itemname4">Butter Chicken</h4>
-          <p class="itemprice4"><b>$8.00</b></p>
+          <h4 class="itemname4">Wedges</h4>
+          <p class="itemprice4"><b>$4.00</b></p>
         </div>
-        </a>
+        <div class="ratingcontainer">
+          <label for="ratingw"><b>Rate this item 0-5:</b></label>
+          <div class="ratingsub">
+            <input type="number" id="ratingw" name="ratingw" min="0" max="5">
+            <button onclick="submitRatingw()">Submit</button>
+            <p id="averageRatingw">Average Rating: Calculating...</p>
+
+            <button onclick="fetchAndAverageItemRatingsw()">Calculate Average Rating</button>
+          </div>
+        </div>
+        </a>   
+    <!-- burger -->
+      <a class="itembox">
+        <img src="imgs/burger.png" class="burgerimg"/>
+        <div class="itemcontainer">
+          <h4 class="itemname">Cheeseburger</h4>
+          <p class="itemprice"><b>$5.00</b></p>
+        </div>
+        <div class="ratingcontainer">
+          <label for="ratingburger"><b>Rate this item 0-5:</b></label>
+          <div class="ratingsub">
+            <input type="number" id="ratingb" name="ratingb" min="0" max="5">
+            <button onclick="submitRatingb()">Submit</button>
+            <p id="averageRatingb">Average Rating: Calculating...</p>
+
+            <button onclick="fetchAndAverageItemRatingsb()">Calculate Average Rating</button>
+          </div>
+        </div>
+      </a>
+
+   <!-- butterchicken -->
+      <a class="itembox3">
+        <img src="imgs/butterchicken.png" class="butterchickenimg"/>
+        <div class="itemcontainer3">
+          <h4 class="itemname3">Butter Chicken</h4>
+          <p class="itemprice3"><b>$8.00</b></p>
+        </div>
+        <div class="ratingcontainer">
+          <label for="ratingbc"><b>Rate this item 0-5:</b></label>
+          <div class="ratingsub">
+            <input type="number" id="ratingbc" name="ratingbc" min="0" max="5">
+            <button onclick="submitRatingbc()">Submit</button>
+            <p id="averageRatingbc">Average Rating: Calculating...</p>
+
+            <button onclick="fetchAndAverageItemRatingsbc()">Calculate Average Rating</button>
+          </div>
+        </div>
+        </a>   
  </div>
   <footer>
     <div class="footer-content">

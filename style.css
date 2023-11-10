@@ -133,16 +133,6 @@ border-radius: 50px;
 
 /* Miscellaneous */
 
-#loading {
-  margin: auto;
-  width: 100px;
-  
-}
-
-#loading img {
-  width: 100%;
-}
-
 .logout-link  {
   display: none;
 }

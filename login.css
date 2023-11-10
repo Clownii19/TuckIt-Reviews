@@ -1,0 +1,136 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-image: url("imgs/backgroundimg4.jpg");
+  background-size:cover;
+  background-repeat:repeat-x;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center; /* Center content vertically */
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  padding-right: 100px;
+}
+
+
+
+  .website-logo img {
+  height: 160px;
+  padding-top: 80px;
+  margin-left: 50px;
+  transition: 0.2s ;
+}
+
+  .website-logo img:hover{
+  opacity: 80%;
+
+  }
+
+
+
+  h1 {
+    font-size: 75px;
+    margin-top: 100px;
+    color:black;
+
+   }
+
+  header nav {
+  display:flex;
+  width: 700px;
+  justify-content:space-around;
+  padding-top: 55px;
+}
+
+
+  header nav a{
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-size: 50px;
+  text-decoration: none;
+  color:black;
+  cursor: pointer;
+  transition: color 0.1s ease;
+
+  }
+  header nav a:hover {
+    color:#FF7A00; 
+
+  }
+#loginbutton {
+border-radius: 50px;
+  background-color: #FF7A00;
+  border: 5px solid black;
+  width: 140px; 
+  transition: color 0.2s ease; 
+}
+#loginbutton:hover {
+  color:black;
+}
+
+.logout-link {
+  display: none;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  margin-top: 10%;
+  justify-content: center;
+  margin-left: 40%;
+  
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-button {
+  background-color: #FF7A00;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-button:hover {
+  background-color: white;
+}
+.logout-link  {
+  display: none;
+}
